@@ -10,12 +10,17 @@
 #define Controller_hpp
 
 #include <iostream>
+#include <string>
+using namespace std;
 
 class Controller
 {
 public:
     Controller();
     void start();
+    int intArray();
+    double doubleArray();
+    string stringArray();
 };
 
 #endif /* Controller_hpp */

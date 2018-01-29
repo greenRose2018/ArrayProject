@@ -20,3 +20,20 @@ void Controller:: start()
     
     
 }
+int Controller:: intArray()
+{
+    
+    return 0;
+}
+
+double Controller:: doubleArray()
+{
+    
+    return 1.2;
+}
+
+string Controller:: stringArray()
+{
+    
+    return "3";
+}
