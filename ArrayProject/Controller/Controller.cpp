@@ -42,7 +42,6 @@ double Controller:: doubleArray()
 {
     int decimalArray[25];
     int num = 0 ;
-    cout.precision(4);
     
     for(double decimal = 0.0; num < 25; decimal+=.5)
     {
@@ -53,7 +52,7 @@ double Controller:: doubleArray()
     for (int num = 0; num < 25; num++)
     {
         
-        cout << fixed << decimalArray[num] << endl;
+        cout << fixed << setprecision(3) << decimalArray[num] << endl;
     }
     
     
