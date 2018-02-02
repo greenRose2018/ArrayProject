@@ -17,9 +17,9 @@ Controller:: Controller()
 
 void Controller:: start()
 {
-    //intArray();
+    intArray();
     doubleArray();
-    //stringArray();
+    stringArray();
     
 }
 int Controller:: intArray()
@@ -47,10 +47,12 @@ double Controller:: doubleArray()
     for(double decimal = 0.0; num < 25; decimal+=.5)
     {
         decimalArray[num] = decimal;
+        
         num++;
     }
     for (int num = 0; num < 25; num++)
     {
+        
         cout << fixed << decimalArray[num] << endl;
     }
     
@@ -60,6 +62,11 @@ double Controller:: doubleArray()
 
 string Controller:: stringArray()
 {
+    string strArray[5] = {"Hello","Bonjour","Hola","Nin Hao","Kon'nichiwa"};
     
+    for(int i = 0; i < 5; i++)
+    {
+        cout<< "How to say Hello in a different Language around the world: "<< strArray[i] << endl;
+    }
     return "3";
 }
