@@ -20,7 +20,6 @@ void Controller:: start()
     intArray();
     doubleArray();
     stringArray();
-    
 }
 int Controller:: intArray()
 {
@@ -40,19 +39,20 @@ int Controller:: intArray()
 
 double Controller:: doubleArray()
 {
-    int decimalArray[25];
+    double decimalArray[25];
     int num = 0 ;
     
     for(double decimal = 0.0; num < 25; decimal+=.5)
     {
         decimalArray[num] = decimal;
+        cout.precision(1);
         
         num++;
     }
     for (int num = 0; num < 25; num++)
     {
         
-        cout << fixed << setprecision(3) << decimalArray[num] << endl;
+        cout << fixed <<decimalArray[num] << endl;
     }
     
     
